@@ -148,14 +148,6 @@ p {
     text-align: center;
 }
 
-.partner--images {
-    justify-content: center;
-}
-
-.partner__img + .partner__img {
-    margin-left: 2em;
-}
-
 footer {
     border-top: 1px solid var(--clr-secondary);
 }
@@ -308,6 +300,14 @@ form p {
         height: 100%;
         padding: 2em;
         text-align: center;
+    }
+
+    .partner__img + .partner__img {
+        margin-left: 2em;
+    }
+
+    .partner--images {
+        justify-content: center;
     }
 
 }
