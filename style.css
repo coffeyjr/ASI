@@ -1,0 +1,273 @@
+:root {
+    --clr-primary: #FFF;
+    --clr-secondary: #11162a;
+    --clr-accent: #49171c;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1.125em;
+    line-height: 1.6;
+}
+
+ol, ul {
+    margin: 0;
+    padding: 0;
+}
+
+img, picture {
+    width: 100%;
+}
+
+h1, h2, h3, h4 {
+    margin-top: .75em;
+    padding: 0;
+    font-family: 'Alexandria', sans-serif;
+    color: var(--clr-accent);
+}
+
+p {
+    margin-top: .75em;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 1em;
+    max-width: 1200px;
+    background: var(--clr-primary);
+}
+
+.carousel-control-next, .carousel-control-prev {
+    width: 5% !important;
+}
+
+#btn-back-to-top {
+    position: fixed;
+    display: none;
+}
+
+.button__back-to-top {
+    background: var(--clr-secondary);
+}
+
+.navigation--main {
+    background: var(--clr-secondary);
+}
+
+.nav__list {
+    font-family: 'Alexandria', sans-serif;
+    justify-content: space-around;
+    align-items: center;
+    height: 350px;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: var(--clr-primary);
+}
+
+.nav__item {
+    box-shadow: inset 0 0 0 0 var(--clr-accent);
+    color: var(--clr-primary);
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  }
+
+.nav__item:hover,
+.nav__item:focus {
+    box-shadow: inset 500px 0 0 0 var(--clr-accent);
+    color: white;
+}
+
+/* [aria-current="page"] {
+    box-shadow: 0px 1px var(--clr-accent);
+} */
+
+.h-full{
+
+        height: 100vh;
+}
+
+.img__logo {
+    width: 100px;
+    border-radius: 3px;
+}
+
+.service__information {
+    text-align: center;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.box:last-child {
+    margin-bottom: 5em;
+}
+
+.box__img {
+    border-radius: 15px;
+}
+
+.box__link {
+    color: var(--clr-secondary);
+}
+
+.box__link:hover,
+.box__link:focus {
+    color: var(--clr-accent);
+}
+
+.partner--images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5em;
+}
+
+.partner__img {
+    width: 60px;
+}
+
+footer {
+    border-top: 1px solid var(--clr-secondary);
+}
+
+.footer {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__item {
+    list-style: none;
+    font-size: .75em;
+}
+
+
+/* Financial Institutions Page */
+
+.hero__title {
+    font-size: 1.25em;
+    text-align: center;
+}
+
+/* END Financial Institutions Page */
+
+/* Contact Page */
+
+form, input, textarea {
+    width: 100%;
+}
+
+form p {
+    font-family: 'Alexandria', sans-serif;
+}
+
+.submit {
+    background: var(--clr-primary);
+    color: var(--clr-accent);
+    border: 1px solid var(--clr-accent);
+    border-radius: 10px;
+    width: 100%;
+    padding: 0.55em .75em;
+    margin-top: 1em;
+    font-family: 'Alexandria', sans-serif;
+}
+
+.submit:hover,
+.submit:focus {
+    background: var(--clr-accent);
+    color: var(--clr-primary);
+}
+
+.favicon__svg {
+    height: 4em;
+}
+
+.contact__cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 1em;
+}
+
+.contact__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+
+    padding: 1em;
+
+    background: #e5e5e5;
+}
+
+.contact__text {
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+}
+
+/* End Contact Page */
+
+/* Application Page */
+
+.application__information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    text-align: center;
+
+    margin-bottom: 10em;
+}
+
+.application__btn {
+    background-image: url(stacked-peaks-haikei.svg);
+    color: var(--clr-primary);
+
+    text-decoration: none;
+    padding: 2em 3em;
+}
+
+/* End Application Page */
+
+/* Desktop */
+@media (min-width: 1100px) {
+    .boxes {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3em;
+        margin-top: 3em;
+        padding: 3em;
+    }
+
+    .box {
+        margin-top: 0;
+        height: 550px;
+    }
+}
+
+

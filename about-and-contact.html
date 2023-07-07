@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About All Security - ASI</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@700&family=Plus+Jakarta+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+        <!-- Back to top button -->
+    <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="inline-block p-3 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out bottom-5 right-5 button__back-to-top" id="btn-back-to-top">
+        <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-4 h-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"></path></svg>
+    </button>
+
+    <nav class="navigation--main sticky top-0 z-50">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+          <a href="index.html" class="flex items-center">
+              <img src="images/Logo.jpg" class="img__logo mr-3" alt="Flowbite Logo" />
+          </a>
+          <button data-collapse-toggle="navbar-solid-bg" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden focus:outline-none" aria-controls="navbar-solid-bg" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                  <path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+              </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
+            <ul class="flex flex-col  mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent nav__list">
+              <li class="nav__item">
+                <a href="index.html" class="block py-2 pl-3 pr-4 rounded md:bg-transparent md:p-0 nav__link">Home</a>
+              </li>
+              <li class="nav__item">
+                <a href="financial-institutions.html" class="block py-2 pl-3 pr-4 rounded md:bg-transparent md:p-0 nav__link">Financial Institutions</a>
+              </li>
+              <li class="nav__item">
+                <a href="commercial.html" class="block py-2 pl-3 pr-4 rounded md:bg-transparent md:p-0 nav__link">Commercial</a>
+              </li>
+              <li class="nav__item">
+                <a href="residential.html" class="block py-2 pl-3 pr-4 rounded md:bg-transparent md:p-0 nav__link">Residential</a>
+              </li>
+              <li class="nav__item">
+                <a href="about-and-contact.html" class="block py-2 pl-3 pr-4 rounded md:bg-transparent md:p-0 nav__link" aria-current="page">About and Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <section class="hero">
+        <div class="container">
+            <img src="//nebula.wsimg.com/a7b521ca3459c61dd8dbdc7f74d5c1d9?AccessKeyId=42770415EDA5C7C1C9B9&disposition=0&alloworigin=1" alt="" class="img__hero">
+        </div>
+    </section>
+
+    <section class="form">
+        <div class="container">
+            <form>
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_subject" value="New Email">
+                <input type="hidden" name="_autoresponse" value="Thank you for contacting me! I will be in touch with you shortly.">
+
+                <p>First Name *</p>
+                <input type="text" name="First Name" required="">
+                <p>Last Name *</p>
+                <input type="text" name="Last Name" required="">
+                <p>Email Address *</p>
+                <input type="email" name="Email" required="">
+                <p>Message *</p>
+                <div>
+                    <textarea name="Message" rows="5"></textarea>
+                </div>
+                <input type="hidden" name="_next" value="">
+                <button type="submit" class="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <div class="contact__cards">
+                <div class="contact__card">
+                    <h2 class="contact__title">Contact Us</h2>
+                    <p class="contact__text"><b>ASI, LLC</b></p>
+                    <p class="contact__text">P.O. Box 7246 Knoxville, TN 37921</p>
+                    <p class="contact__text">(865)-392-9393</p>
+                    <a href="mailto:service@asi-tn.com" class="box__link">service@asi-tn.com</a>
+                </div>
+
+                <div class="contact__card">
+                    <h2 class="contact__title">Follow us on Facebook</h2>
+                    <a href="https://www.facebook.com/ASIalarms">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="favicon__svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#49171c}</style><path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"/></svg>
+                    </a>
+                </div>
+
+                <div class="contact__card">
+                    <h2 class="contact__title">We Are Hiring!</h2>
+                    <p class="contact__text">Need a job? Know someone who does? Give us a call or click the link below for more information.</p>
+                    <a href="application.html" class="box__link">Click Here for Job Application</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container">
+        <ul class="footer">
+            <li class="footer__item">Copyright © ASI</li>
+            <li class="footer__item">All rights reserved. <b>TN Lic# C-1579</b></li>
+            <li class="footer__item"><b>Questions?</b> Call us at (865)392-9393!</li>
+        </ul>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
