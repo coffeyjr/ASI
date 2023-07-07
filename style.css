@@ -87,7 +87,6 @@ p {
 
 [aria-current="page"] {
     border-left: 10px solid var(--clr-accent);
-    border-style: groove;
 }
 
 .h-full{
