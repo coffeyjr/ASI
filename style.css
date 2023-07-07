@@ -144,6 +144,18 @@ p {
     width: 60px;
 }
 
+.partners--title {
+    text-align: center;
+}
+
+.partner--images {
+    justify-content: center;
+}
+
+.partner__img + .partner__img {
+    margin-left: 2em;
+}
+
 footer {
     border-top: 1px solid var(--clr-secondary);
 }
@@ -182,9 +194,8 @@ form p {
 }
 
 .submit {
-    background: var(--clr-primary);
-    color: var(--clr-accent);
-    border: 1px solid var(--clr-accent);
+    background: var(--clr-accent);
+    color: var(--clr-primary);
     border-radius: 10px;
     width: 100%;
     padding: 0.55em .75em;
@@ -194,8 +205,9 @@ form p {
 
 .submit:hover,
 .submit:focus {
-    background: var(--clr-accent);
-    color: var(--clr-primary);
+    background: var(--clr-primary);
+    color: var(--clr-accent);
+    border: 1px solid var(--clr-accent);
 }
 
 .favicon__svg {
@@ -255,7 +267,7 @@ form p {
 /* End Application Page */
 
 /* Desktop */
-@media (min-width: 1100px) {
+@media (min-width: 990px) {
     .boxes {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -265,9 +277,39 @@ form p {
     }
 
     .box {
+        justify-content: space-between;
         margin-top: 0;
-        height: 550px;
+        height: 100%;
+        padding-bottom: 1em;
     }
+
+    .box:last-child {
+        margin-bottom: 0;
+    }
+
+    .nav__list {
+        height: auto;
+    }
+
+    [aria-current="page"] {
+        border-left: none;
+    }
+
+    .hero__title {
+        font-size: 2.5rem;
+    }
+
+    .contact__cards {
+        flex-direction: row;
+    }
+
+    .contact__card {
+        width: 100%;
+        height: 100%;
+        padding: 2em;
+        text-align: center;
+    }
+
 }
 
 
